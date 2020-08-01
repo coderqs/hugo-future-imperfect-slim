@@ -1,0 +1,208 @@
+# For a description of these parameters, please visit the theme wiki.
+# https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
+baseURL                 = "http://www.coderqs.com"
+DefaultContentLanguage  = "zh-cn"
+title                   = "菜鸟修行路"
+theme                   = "hugo-future-imperfect-slim"
+paginate                = 3
+disqusShortname         = ""
+googleAnalytics         = ""
+pluralizeListTitles     = false
+disableLanguages        = [""]
+
+[outputs]
+  home                  = ["html", "json"]
+
+[params]
+  enableCDN             = false
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  highlightjs           = true
+  highlightjsTheme      = "github"
+  highlightjsLang       = ["html", "css", "js", "toml"]
+  viewMorePostsLink     = "/blog/"
+  readingTime           = true
+  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+
+  [params.meta]
+    description         = "不积跬步，无以至千里"
+    author              = "coderqs"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+
+  [params.header]
+    navbarTitle         = "菜鸟修行路"
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = false
+
+  [params.intro]
+    header                = "菜鸟修行路"
+    paragraph             = "不积跬步，无以至千里<br>不积小流，无以成江海"
+    rssIntro              = false
+    socialIntro           = true
+    hideWhenSingleColumn  = true
+    alwaysOnHomepage      = true
+
+    [params.intro.pic]
+      src                 = "img/main/logo.jpg"
+      shape               = "circle"
+      width               = "80"
+
+  [params.sidebar]
+    about               = "记录成长."
+    postAmount          = 5
+    categories          = true
+    categoriesByCount   = false
+
+  [params.footer]
+    rssFooter           = false
+    socialFooter        = false
+
+  [params.staticman]
+    enabled             = false
+    api                 = "https://www.coderqs.com:8080/v2/connect/coderqs/comments"  # No Trailing Slash
+    gitProvider         = "github"
+    username            = "coderqs"
+    repo                = "comments"
+    branch              = "master"
+
+    [params.staticman.recaptcha]
+      siteKey           = ""
+      encryptedKey      = ""
+
+[menu]
+
+  [[menu.main]]
+    name              = "主页"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "博客"
+    identifier        = "blog"
+    url               = "/blog/"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "关于"
+    identifier        = "about"
+    url               = "/about/"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "分类"
+    identifier        = "categories"
+    url               = "/categories/"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+
+  [[menu.main]]
+    name              = "联系人"
+    identifier        = "contact"
+    url               = "/contact/"
+    pre               = "<i class='far fa-envelope'></i>"
+    weight            = 6
+
+[Languages]
+
+  [Languages.zh-cn]
+    LanguageCode        = "zh-cn"
+    LanguageName        = "Simplified Chinese"
+    title               = "修行路，山海行"
+    description         = "漫漫修行，茫茫山海."
+    weight              = 1
+
+    [[Languages.zh-cn.menu.main]]
+      name              = "主页"
+      identifier        = "home"
+      url               = "/"
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.zh-cn.menu.main]]
+      name              = "博客"
+      identifier        = "blog"
+      url               = "/blog/"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 2
+
+    [[Languages.zh-cn.menu.main]]
+      name              = "关于"
+      identifier        = "about"
+      url               = "/about/"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 3
+
+    [[Languages.zh-cn.menu.main]]
+      name              = "类别"
+      identifier        = "categories"
+      url               = "/categories/"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.zh-cn.menu.main]]
+      name              = "联系人"
+      identifier        = "contact"
+      url               = "/contact/"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+
+[social]
+  # Coding Communities
+  github                = "https://github.com/coderqs"
+  gitlab                = ""
+  stackoverflow         = "" # User Number
+  bitbucket             = ""
+  jsfiddle              = ""
+  codepen               = ""
+  # Visual Art Communities
+  deviantart            = ""
+  flickr                = "example"
+  behance               = ""
+  dribbble              = ""
+  # Publishing Communities
+  wordpress             = ""
+  medium                = ""
+  # Professional/Business Oriented Communities
+  linkedin              = ""
+  linkedin_company      = ""
+  foursquare            = ""
+  xing                  = ""
+  slideshare            = ""
+  # Social Networks
+  facebook              = "example"
+  googleplus            = ""
+  reddit                = ""
+  quora                 = ""
+  youtube               = ""
+  vimeo                 = ""
+  whatsapp              = "" # WhatsApp Number
+  # WeChat and QQ need testing.
+  wechat                = "example"
+  qq                    = "example" # User ID Number
+  weibo					= "example"
+  instagram             = ""
+  tumblr                = ""
+  twitter               = "example"
+  strava                = ""
+  skype                 = ""
+  snapchat              = ""
+  pinterest             = ""
+  telegram              = ""
+  vine                  = ""
+  googlescholar         = ""
+  orcid                 = ""
+  researchgate          = ""
+  mastodon              = "example.com/@example"
+  # Email
+  email                 = "coderqs@gmail.com"
