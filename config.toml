@@ -23,7 +23,8 @@ disableLanguages        = [""]
   viewMorePostsLink     = "/blog/"
   readingTime           = true
   socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
-
+  busuanzi		= true
+  
   [params.meta]
     description         = "不积跬步，无以至千里"
     author              = "coderqs"
